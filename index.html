@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+      <div class="container">
+       <div id="main" class="card card-body">
+        
+        <form id="my-form" class="form-inline mb-3">
+          <label for="amount">Choose Expense Amount</label>
+          <input type="number" class="form-control mr-1" id="amount">
+          <label for="desc">Choose Description</label>
+          <input type="text" class="form-control mr-2" id="desc">
+          <label for="catogery">Choose Category</label>
+          <input list="catogery" class="form-control mr-3" >
+          <datalist id="catogery">
+            <option value=" "></option>
+            <option value="Movie"></option>
+            <option value="Exbhition"></option>
+            <option value="Water Park"></option>
+          </datalist>
+
+          
+          <input type="submit" class="btn btn-dark" value="Add Expense">
+        </form>
+        <h2 class="title"></h2>
+        <ul id="items" class="list-group">
+          
+        </ul>
+       </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
